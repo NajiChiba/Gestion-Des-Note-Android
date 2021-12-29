@@ -95,8 +95,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addNote(String note, String module){
-        listViewItems.add(n+"          "+module+"         "+note);
         int n = listViewItems.size() + 1;
+        listViewItems.add(n+"          "+module+"         "+note);
         noteInserer.add(module);
         note_tf.setText("");
         notesListView.setAdapter(notesAdapter);
